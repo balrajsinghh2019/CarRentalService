@@ -1,0 +1,462 @@
+/* -------------------------------------------------- */
+/* BASIC SETUP */
+/* -------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #41444b;
+    color: #fddb3a;
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* -------------------------------------------------- */
+/* REUSABLE ELEMENTS */
+/* -------------------------------------------------- */
+
+a {
+    text-decoration: none;
+    color: #fddb3a;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.dark {
+    background-color: #41444b;
+}
+
+.lil-dark {
+    background-color: #52575d;
+}
+
+.clear {
+    clear: both;	
+}
+
+.btn div{
+    background-color: #fddb3a;
+    color: #41444b;
+}
+
+.btn div:hover{
+    transform: scale(1.10);
+}
+
+.content {
+    padding: 30px 40px 30px 40px;
+    text-align: justify;
+}
+
+.content div {
+    margin: 15px 0px 15px 0px; 
+}
+
+.content h2 {
+    text-align: left;
+}
+
+.content p {
+    color: #f6f4e6;
+    line-height: 30px;
+}
+
+/* -------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------- */
+
+.menu {
+    float: right;
+    margin-top: 40px;
+    margin-right: 80px;
+}
+
+.menu a {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+    
+.logo {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.logo:hover {
+    transform: scale(1.10);
+}
+
+/* -------------------------------------------------- */
+/* BANNER AREA */
+/* -------------------------------------------------- */
+
+.banner-section {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+}
+
+.banner-section img {
+    max-width: 100%;
+    height: auto !important;
+    filter: brightness(50%);
+}
+
+.banner-section b{
+    font-size: 60px;
+    color: #f6f4e6;
+    line-height: 50px;
+    position: relative;
+    bottom: 150px;
+    left: 50px;
+    max-width: 100%;
+    height: auto !important;
+}
+/* -------------------------------------------------- */
+/* ABOUT US SECTION */
+/* -------------------------------------------------- */
+
+.about-section {
+    margin-top: 530px;
+}
+
+.about-section .thumbs {
+    margin-left: 245px;
+    padding: 0px  0px 100px 0px;
+}
+
+.about-section .thumbs .thumb {
+    height: 150px;
+    width: 150px;
+    margin: 70px;
+    float: left;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 40px;
+}
+
+/* -------------------------------------------------- */
+/* BLOG SECTION */
+/* -------------------------------------------------- */
+
+.blogs-section {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    position: relative;
+    padding-top: 20px;
+}
+
+.blogs-section .thumbs {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+}
+
+.blogs-section .thumbs .thumb {
+    height: 150px;
+    width: 150px;
+    margin: 35px;
+    float: left;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 40px;
+}
+
+.blogs-section .thumbs .thumb img{
+    height: 50px;
+}
+
+/* -------------------------------------------------- */
+/* OUR CARS SECTION */
+/* -------------------------------------------------- */
+
+.cars-section {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    position: relative;
+    padding-top: 20px;
+}
+
+.cars-section .images {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+}
+
+.cars-section .btn {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+}
+
+.cars-section .images img {
+    height: 190px;
+    width: 360px;
+}
+
+.cars-section .images img:hover {
+    transform: scale(1.10);
+}
+
+.cars-section .images .thumb {
+    margin: 35px;
+    float: left;
+    text-align: center;
+    color: #f6f4e6;
+    font-size: 30px;
+}
+
+.cars-section .btn .thumb {
+    margin: auto;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 25%;
+    padding: 10px;
+}
+
+/* -------------------------------------------------- */
+/* ADDRESS AND FORM SECTION */
+/* -------------------------------------------------- */
+
+.location-section, .form-section {
+    width: 50%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.location-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.90)), url('../images/pexels-helena-lopes-1904076.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    text-align: center;
+}
+
+.location-section p{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.form-section form {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 46px;
+}
+
+.form-section form input{
+    background-color: #f6f4e6;
+    border: 0;
+    height: 30px;
+    width: 70%;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.form-section form #address{
+    height: 130px;
+}
+
+.form-section form #submit {
+    background-color: #fddb3a;
+}
+
+.form-section form #submit:hover {
+    transform: scale(1.10);
+}
+
+/* -------------------------------------------------- */
+/* FOOTER */
+/* -------------------------------------------------- */
+
+footer{
+    text-align: center;
+    line-height: 20px;
+}
+
+/* -------------------------------------------------- */
+/* ABOUT US */
+/* -------------------------------------------------- */
+
+/* MENU */
+
+.about-header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+}
+
+/* BANNER */
+
+.about-banner-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.about-banner-section img {
+    width: inherit;
+    filter: brightness(50%);
+}
+
+.about-page .about-banner-section b {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 100px;
+    color: #f6f4e6;
+}
+
+/* -------------------------------------------------- */
+/* BLOG */
+/* -------------------------------------------------- */
+
+.blog-page .about-banner-section b {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    font-size: 100px;
+    color: #f6f4e6;
+}
+
+/* -------------------------------------------------- */
+/* CONTACT PAGE */
+/* -------------------------------------------------- */
+
+.contact-page .location-form h1, .contact-page .location-form h2 {
+    color: #f6f4e6;
+}
+
+.contact-page .location-form {
+    text-align: center;
+    padding-top: 94px;
+    font-size: 30px;
+}
+
+.location-form form input{
+    background-color: #f6f4e6;
+    border: 0;
+    height: 30px;
+    width: 70%;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.location-form form #address{
+    height: 130px;
+}
+
+.location-form form #submit {
+    background-color: #fddb3a;
+}
+
+
+
+
+.contact-location-section, .contact-form-section {
+    padding: 30px 0px 30px 0px;
+}
+
+/* -------------------------------------------------- */
+/* CARS PAGE */
+/* -------------------------------------------------- */
+
+.cars-page .about-banner-section b {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 100px;
+    color: #f6f4e6;
+}
+
+.cars-page .car-thumb, .cars-page .car-descrition {
+    width: 50%;
+    float: left;
+}
+
+.cars-page .content .car img {
+    width: 95%;
+}
+
+.cars-page .content .car img:hover{
+    transform: scale(1.10);
+}
+
+.cars-page .car-descrition {
+    padding-top: 5%;
+    padding-left: 9%;
+    font-size: 30px;    
+}
+
+.cars-page .car-descrition a {
+    background-color: #fddb3a;
+    color: #41444b;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+.cars-page .car-descrition mark {
+    background: none;
+    color: #f6f4e6;    
+}
+
+/* -------------------------------------------------- */
+/* REVIEW ORDER PAGE */
+/* -------------------------------------------------- */
+
+
+.review-order-page .content {
+    margin-top: 7%;
+    border: 2px solid #f6f4e6;
+    font-size: 30px;
+}
+
+.review-order-page .content mark {
+    background: none;
+    color: #f6f4e6;    
+}
+
+.review-order-page .content label {
+    font-size: 20px; 
+}
+
+.review-order-page .content form {
+    text-align: center;
+}
+
+.review-order-page #submit{
+    display: block;
+    margin: auto;
+    background-color: #fddb3a;
+    padding: 10px 42px;
+    border-radius: 25px;
+    font-size: 30px;
+}
+
+.review-order-page #submit:hover {
+    transform: scale(1.10);
+}
